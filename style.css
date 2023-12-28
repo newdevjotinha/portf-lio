@@ -5,7 +5,7 @@
     --color-destaque: #1f5fa3;
     --color-branco: #ffffff;
     --color-cinza-neutro: #888889;
-    --color-branco-neutro: rgba(255, 255, 255, 0.70);
+    --color-branco-neutro: rgba(255, 255, 255, 0.7);
 }
 
 body {
@@ -37,7 +37,7 @@ a {
 }
 
 .inicio {
-    background-image: url('imgs/thiago.png');
+    background-image: url("imgs/thiago.png");
     background-repeat: no-repeat;
     background-position: right bottom;
     background-size: auto;
@@ -235,7 +235,6 @@ footer {
 }
 
 @media screen and (max-width: 900px) {
-
     body {
         background: var(--color-fundo);
         color: var(--color-branco);
@@ -257,7 +256,7 @@ footer {
     .caixa-topo .lateral {
         background-color: var(--color-destaque);
 
-        display: flex;
+        display: none;
         flex-direction: column;
 
         padding: 10px;
@@ -295,10 +294,10 @@ footer {
 
     .topo .menu {
         display: flex;
-        gap: 20px;
+        gap: 7px;
         font-size: 15px;
         flex-direction: row;
-        max-width: 100px;
+        max-width: 90px;
     }
 
     .topo .menu a {
@@ -361,6 +360,8 @@ footer {
     }
 
     .trabalhar-juntos {
+        display: none;
+
         color: var(--color-cinza-neutro);
         font-size: 18px;
         font-weight: 400;
@@ -389,7 +390,7 @@ footer {
     }
 
     .dobra-dois h1 {
-        font-size: 58px;
+        font-size: 30px;
         text-align: center;
         align-items: center;
     }
@@ -397,16 +398,15 @@ footer {
     .caixa-projetos {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: left;
 
         gap: 22px;
-        margin-left: 72px;
+        margin: auto;
         padding: 10px;
     }
 
     .projetos {
-        max-width: 530px;
-        width: 437px;
+        max-width: 337px;
 
         border-width: 1px;
         border-color: var(--color-branco);
@@ -417,7 +417,7 @@ footer {
     }
 
     .projetos img {
-        width: 432px;
+        width: 335px;
     }
 
     .projetos .caixa-info {
@@ -434,12 +434,12 @@ footer {
     }
 
     .contact {
-        width: 525px;
+        width: 225px;
         padding: 16px 32px;
 
         background-color: var(--color-destaque);
 
-        font-size: 36px;
+        font-size: 30px;
 
         border-radius: 99px;
 
@@ -449,12 +449,12 @@ footer {
     }
 
     footer {
-        margin-top: 66px;
+        margin-top: auto;
 
         display: flex;
-        flex-direction: row;
+        flex-direction: column-reverse;
         justify-content: space-between;
-        padding: 24px;
+        padding: 14px;
 
         border-top-width: 1px;
         border-top-style: solid;
@@ -464,15 +464,15 @@ footer {
     .menu2 {
         display: flex;
 
-        gap: 10px;
+        gap: 25px;
     }
 
-.menu2 img {
-margin-right: 50px;}
+    img {
+        margin-right: 10px;
+    }
 
     .menu2 a {
         color: var(--color-branco-neutro);
-        font-size: 20px;
+        font-size: 15px;
     }
-
 }
